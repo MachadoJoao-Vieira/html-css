@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Aliamento vertical
+    </title>
+    <style>
+        #conteiner{
+            position: relative;
+            height: 500px;
+            background-color: purple;
+            background-image: url('imagens/image-removebg-preview.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat; 
+            padding: 10px;
+
+        }
+        #conteudo{
+            position: absolute;
+            width: 400px;
+            height: 200px;
+            background-color: yellow;
+            background-image: url('imagens/image-removebg-preview.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            top: 50%;
+            left: 50%;
+
+            /* MUDA O ALVO DO RETANGULO, QUE ERA ESQUERDA/TOPO PARA CENTRO/CENTRO */
+            transform: translate(-50%, -50%); 
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section id="conteiner">
+            <article id="conteudo">
+
+            </article>
+        </section>
+    </main>
+    
+</body>
+</html>
