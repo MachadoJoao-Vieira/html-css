@@ -8,14 +8,14 @@
 </head>
 <body>
     <h1>Teste de Formulário</h1>
-    <form action="cadastro.py" method="get">
+    <form action="cadastro.py" method="post" autocomplete="on">
         <p>
             <label for="isu">Usuário</label>
-            <input type="text" name="usu" id="isu">
+            <input type="text" name="usu" id="isu" required minlength="5" maxlength="15" size="10" placeholder="nome do usuário" autocomplete="username">
         </p>
         <p>
             <label for="ipass">Senha</label>
-            <input type="password" name="pass" id="ipass">
+            <input type="password" name="pass" id="ipass" required minlength="8" maxlength="20" size="10" placeholder="senha" autocomplete="current-password">
         </p>
 
         <p>
